@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.DarRhizlane" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/brique</item>
+        <item name="colorPrimaryDark">@color/brique</item>
+        <item name="colorAccent">@color/brique2</item>
+        <item name="android:windowBackground">@color/fond</item>
+        <item name="android:statusBarColor">@color/brique</item>
+    </style>
+</resources>

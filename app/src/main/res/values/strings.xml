@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dar Rhizlane</string>
+    <string name="titre_connexion">Connexion au serveur</string>
+    <string name="aide">Saisissez l\'adresse du PC serveur Dar Rhizlane (affichée sur le serveur : Administration › Réseau), ou détectez-le automatiquement. Le partage réseau doit être activé sur le serveur et la tablette doit être sur le même Wi-Fi.</string>
+    <string name="adresse_ip">Adresse IP du serveur</string>
+    <string name="port">Port</string>
+    <string name="tester">Se connecter</string>
+    <string name="detecter">Détecter le serveur</string>
+    <string name="changer_serveur">Changer de serveur</string>
+    <string name="actualiser">Actualiser</string>
+</resources>
