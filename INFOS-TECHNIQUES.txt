@@ -1,0 +1,12 @@
+Projet Android (WebView) — Dar Rhizlane Tablette
+- Langage : Java. Gradle wrapper fourni (Gradle 8.7), Android Gradle Plugin 8.5.2.
+- compileSdk 34, minSdk 21, targetSdk 34. Dépendances : androidx.appcompat,
+  androidx.swiperefreshlayout.
+- ConnexionActivity : saisie / détection (scan du sous-réseau /24 sur /api/info)
+  de l'adresse du serveur, mémorisée dans les préférences.
+- MainActivity : WebView plein écran vers http://IP:47820/, pull-to-refresh,
+  téléchargements via DownloadManager, liens externes (WhatsApp, mailto) ouverts
+  hors de l'application.
+- Construction : ./gradlew assembleDebug  -> app/build/outputs/apk/debug/app-debug.apk
+  (nécessite le SDK Android + un accès Internet pour les dépendances).
+- CI : .github/workflows/build-apk.yml construit l'APK sur GitHub Actions.

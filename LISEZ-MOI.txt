@@ -1,0 +1,79 @@
+APPLICATION TABLETTE — DAR RHIZLANE (Android)
+=============================================
+
+À quoi ça sert
+--------------
+Une application Android pour les tablettes du restaurant. Elle ouvre
+l'application Dar Rhizlane du PC serveur, en plein écran, comme une vraie
+appli (icône sur l'écran d'accueil), sans passer par le navigateur.
+La tablette doit être sur le MÊME Wi-Fi que le PC serveur, et le « partage
+réseau » doit être activé sur le serveur (Administration › Réseau).
+
+Ce dossier contient le PROJET de l'application. Il faut le « construire » une
+fois pour obtenir le fichier .apk à installer sur les tablettes. Deux
+méthodes, au choix.
+
+
+MÉTHODE A — Construire en ligne, GRATUIT, sans rien installer (conseillée)
+-------------------------------------------------------------------------
+1. Créez un compte sur github.com (gratuit).
+2. Créez un nouveau dépôt (New repository), par ex. « darrhizlane-tablette ».
+3. Cliquez « uploading an existing file » et déposez TOUT le contenu de ce
+   dossier (gardez la structure des sous-dossiers). Validez (Commit).
+4. Onglet « Actions » du dépôt : la construction démarre toute seule
+   (« Construire l'APK Dar Rhizlane »). Attendez le ✓ vert (2-3 minutes).
+5. Cliquez sur la ligne terminée › section « Artifacts » › téléchargez
+   « DarRhizlane-APK ». Vous obtenez le fichier app-debug.apk.
+
+
+MÉTHODE B — Construire sur votre PC avec Android Studio
+------------------------------------------------------
+1. Installez Android Studio (gratuit) : https://developer.android.com/studio
+2. Ouvrez ce dossier (Open › choisissez le dossier DarRhizlane-Tablette).
+   La première ouverture télécharge Gradle et les composants (quelques
+   minutes) et configure tout automatiquement. Si Android Studio propose
+   « Use Gradle wrapper », acceptez.
+3. Menu Build › Build App Bundle(s) / APK(s) › Build APK(s).
+4. Quand c'est fini, cliquez « locate » : le fichier est
+   app/build/outputs/apk/debug/app-debug.apk
+
+
+INSTALLER L'APK SUR UNE TABLETTE
+--------------------------------
+1. Copiez app-debug.apk sur la tablette (câble USB, e-mail, clé USB, ou
+   Google Drive).
+2. Ouvrez le fichier sur la tablette. Android demandera d'« autoriser
+   l'installation d'applications inconnues » pour cette source : acceptez.
+3. Installez, puis ouvrez « Dar Rhizlane ».
+
+
+PREMIÈRE OUVERTURE
+------------------
+- L'application demande l'adresse du serveur.
+- Bouton « Détecter le serveur » : elle cherche le serveur toute seule sur le
+  Wi-Fi et remplit l'adresse.
+- Ou saisissez l'adresse IP affichée sur le PC serveur
+  (Administration › Réseau), par ex. 192.168.1.20, puis « Se connecter ».
+- L'adresse est mémorisée : les fois suivantes, l'application s'ouvre
+  directement sur Dar Rhizlane.
+
+
+UTILISATION
+-----------
+- Fonctionne comme l'application du PC : connexion avec identifiant / mot de
+  passe, planning, réservations, etc.
+- Tirez vers le bas pour actualiser.
+- Les liens WhatsApp et e-mail ouvrent WhatsApp / la messagerie de la tablette.
+- Les PDF et exports CSV vont dans le dossier « Téléchargements ».
+- Bouton rond en bas à droite : « Actualiser » ou « Changer de serveur ».
+
+
+BON À SAVOIR
+------------
+- Le serveur (PC) doit rester allumé, l'application ouverte, et le partage
+  réseau activé. Pour que l'adresse IP ne change pas, réservez-la dans la box
+  (voir le LISEZ-MOI principal, chapitre réseau).
+- L'APK est signé avec une clé de test : parfait pour un usage interne. Il
+  n'est pas destiné au Play Store (cela demanderait une signature officielle).
+- Plusieurs tablettes peuvent utiliser le même serveur en même temps.
+- minimum Android 5.0.
